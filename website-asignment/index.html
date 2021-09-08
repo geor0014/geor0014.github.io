@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
     
+    <!-- JAVASCRIPT -->
+
+    <script>
+    function openSideMenu(){
+      document.getElementById("menu").style.width = "200px"
+      document.getElementsByClassName("sidebar").style.marginLeft = "200px"
+    }
+    function closeSideMenu(){
+      document.getElementById("menu").style.width = "0"
+      document.getElementsByClassName("sidebar").style.marginLeft = "0"
+    }
+    </script>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css" />
 
@@ -18,8 +31,8 @@
       <!-- HEADER -->
       <header class="item index-header">
         <!-- nav button -->
-        <span class="nav-btn" id="nav-btn">
-          <i class="fas fa-bars fa-rotate-270"></i>
+        <span class="nav-btn" id="onClick" onclick="openSideMenu()" >
+          <i class="fas fa-bars fa-rotate-270" ></i>
         </span>
         <!-- end of nav button -->
         <img src="./images/IMG_9205 G.jpg" class="profile-pic" />
@@ -57,7 +70,16 @@
       
       <!-- SIDEBAR -->
       <section class="item sidebar">
-        This is sidebar
+        <div id="menu" class="slidebar">
+          <a href="#" class="close" onclick="closeSideMenu()">
+            <i class="fas fa-times"></i>
+          </a>
+          <a href="#" class="sidebar-link">Home</a>
+          <a href="#" class="sidebar-link">About</a>
+          <a href="#" class="sidebar-link">Services</a>
+          <a href="#" class="sidebar-link">Portfolio</a>
+          <a href="#" class="sidebar-link">Contact</a>
+        </div>
       </section>
       <!-- END OFF SIDEBAR -->
       

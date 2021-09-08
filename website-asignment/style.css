@@ -10,6 +10,8 @@
 body {
   background-color: #f5f5f5;
   font-family: "Fira Sans", sans-serif;
+  /* The overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the left and right edges. */
+  overflow-x: hidden;
 }
 
 /* these are variables  */
@@ -71,6 +73,20 @@ body {
 .fa-bars {
   font-size: 50px;
   margin-left: 40px;
+  animation: breathe 2s ease-in-out infinite;
+}
+@keyframes breathe {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 /* END OF NAVBUTTON */
 
@@ -127,6 +143,57 @@ a {
 }
 /* END OF NAVBAR */
 /* END OF HEADER */
+
+/* SIDEBAR */
+.slidebar {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: var(--mainBlue);
+  /* opacity: 0.9; */
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.7s ease;
+}
+.slidebar a {
+  display: block;
+  padding: 20px 30px;
+  font-size: 25px;
+  text-decoration: none;
+}
+.slidebar a:hover {
+  color: var(--dark);
+  transition: 0.4s;
+}
+.slidebar .close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+}
+.fa-times {
+  font-size: 35px;
+  transition: transform 0.7s ease-in-out;
+}
+.fa-times:hover {
+  transform: rotate(360deg);
+}
+.sidebar-link,
+.close {
+  color: #f5f5f5;
+}
+
+.sidebar-link {
+  transition: ease;
+}
+.sidebar-link:hover {
+  background: var(--lightGrey);
+  /* border-radius: 3rem; */
+  box-shadow: 0 10px 5px #191500;
+}
+/* END OF SIDEBAR */
 
 /* FOOTER */
 .footer {
