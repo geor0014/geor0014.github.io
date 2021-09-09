@@ -84,6 +84,7 @@ body {
   margin-left: 40px;
   animation: breathe 2s ease-in-out infinite;
 }
+/* animation */
 @keyframes breathe {
   0% {
     transform: scale(1);
