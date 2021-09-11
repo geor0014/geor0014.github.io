@@ -24,46 +24,50 @@
 
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css" />
-
   </head>
+  
   <body>
     <div class="container">
       <!-- HEADER -->
       <header class="item index-header">
-        <!-- nav button -->
-        <span class="nav-btn" id="onClick" onclick="openSideMenu()" >
-          <i class="fas fa-bars fa-rotate-270" ></i>
-        </span>
-        <!-- end of nav button -->
-        <img src="./images/IMG_9205 G.jpg" class="profile-pic" />
         <!-- nav -->
         <nav>
           <ul class="nav-links">
-            <li>
-              <i class="fas fa-home"></i>
-              </i><a href="./index.html" >Home</a>
+            <!-- nav button -->
+            <li class="nav-btn" onclick="openSideMenu()" >
+              <i class="fas fa-bars fa-rotate-270" ></i>
             </li>
+            <!-- end of nav button -->
             <li>
+              <img src="./images/IMG_9205 G.jpg" class="profile-pic" />
+            </li>
+            <li class=" list-item">
+              <i class="fas fa-home"></i>
+              <a href="./index.html" >Home</a>
+            </li>
+            <li class="list-item">
               <i class="fas fa-blog"></i>
               </i><a href="./blog.html">Blog</a>
             </li>
-            <li>
+            <li class="list-item"> 
               <i class="fas fa-columns"></i>
               <a href="./dashboard.html">Dashboard</a>
             </li>
-            <li>
+            <li class="list-item">
               <i class="fas fa-question-circle"></i>
               <a href="./faq.html">FAQ</a>
             </li>
-            <li class="active">
+            <li class="active list-item">
               <i class="fas fa-id-badge"></i>
               <a href="./profile.html">Profile</a>
             </li>
+            <li>
+              <a href="https://hz.nl/en " target="_">
+                <img src="./images/HZ.jpg" class="hz-logo" />
+              </li>
+            </a>
           </ul>
         </nav>
-        <a href="https://hz.nl/en " target="_">
-          <img src="./images/HZ.jpg" class="hz-logo" />
-        </a>
         <!-- end of nav -->
       </header>
       <!--END OF HEADER -->
@@ -84,11 +88,60 @@
       <!-- END OFF SIDEBAR -->
       
       <!-- PARAGRAPH 1 -->
-      <section class="item para-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam consequatur fugiat harum rem nisi, reiciendis, doloremque enim architecto magnam rerum nostrum? Itaque totam, aperiam praesentium quae id officiis numquam, recusandae nostrum consequuntur magnam ut. Ab excepturi iste, asperiores ad, accusamus officiis, libero dolorum quia aperiam architecto id sequi sed alias.</section>
+      <section class="item para-1">
+        <header id="banner">
+          <div class="banner-title">
+            <h1 class="banner-text">Daniel Georgiev</h1>
+            <div class="banner-underline"></div>
+            <div class="banner-btn">
+              <button type="button"><a href="./profile.html">More About Me</a> </button>
+              <button type="button"><a href="index.html#target">Why I chose HBO-ICT</a> </button>
+            </div>
+          </div>
+        </header>
+      </section>
       <!-- END OF PARAGRAPH 1 -->
 
       <!-- PARAGRAPTH 2 -->
-      <section class="item para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam modi, magni ad quas fuga deserunt minima iure possimus impedit velit debitis eos, in iusto natus, non rerum aliquam quos sit doloremque vero! Odio accusantium odit molestias. Corrupti, quae. Voluptatem aut unde explicabo temporibus omnis. Qui illo possimus obcaecati accusamus harum!</section>
+      <section class="item para-2" id="target">
+        <div id="skills">
+        <div class="skills-container">
+          <!-- single skill  -->
+          <article class="skills-item">
+            <i class="fa fa-code"></i>
+            <h1>Code</h1>
+            <p>Why I chose it</p>
+          </article>
+          <!-- end of   single skill  -->
+          <!-- single skill  -->
+          <article class="skills-item">
+            <i class="fa fa-file"></i>
+            <h1>Documented</h1>
+            <p>Expectations</p>
+          </article>
+          <!-- end of   single skill  -->
+          <!-- single skill  -->
+          <article class="skills-item">
+            <i class="fa fa-map"></i>
+            <h1>Optimized</h1>
+            <p>
+           Lorem ipsum dolor sit amet.
+            </p>
+          </article>
+          <!-- end of   single skill  -->
+          <!-- single skill  -->
+          <article class="skills-item">
+            <i class="fa fa-desktop"></i>
+            <h1>Retina</h1>
+            <p>
+           Lorem ipsum dolor sit amet.
+            </p>
+          </article>
+          <!-- end of   single skill  -->
+        </div>
+    </div>
+    <!-- END OF SKILLS  -->
+      </section>
       <!-- END OF PARAGRAPTH 2 -->
 
       <!-- FOOTER -->
