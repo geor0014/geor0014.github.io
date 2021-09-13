@@ -40,7 +40,7 @@ body {
   grid-template-columns: auto 1fr;
 }
 .item {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
 }
 
 .para-1 {
