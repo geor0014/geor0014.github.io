@@ -38,9 +38,9 @@ body {
   grid-template-rows: auto 1fr 1fr auto;
   grid-template-columns: auto 1fr;
 }
-/* .item {
+.item {
   border: 2px solid orange;
-} */
+}
 
 .para-1 {
   grid-area: para-1;
