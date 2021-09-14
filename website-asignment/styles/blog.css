@@ -47,8 +47,13 @@ body {
   /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./images/pexels-photo-4511372.jpeg) center/cover no-repeat fixed;
   color: var(--lightGrey); */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/background-banner.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
 .sidebar {
   grid-area: sidebar;
 }
@@ -261,12 +266,6 @@ a {
 /* BANNER/PARA-1 */
 #banner {
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/background-banner.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,13 +275,19 @@ a {
   text-transform: uppercase;
   color: var(--mainWhite);
   font-style: italic;
+  background: transparent;
+  text-align: center;
+  margin-bottom: -50px;
+  margin-top: 20px;
 }
 .banner-underline {
-  width: 200px;
-  border: 3px solid var(--mainBlue);
+  width: 400px;
+  border: 4px solid var(--mainBlue);
   /* places it in the center */
-  margin: 10px auto 10px auto;
+  margin-top: 40px;
+  margin-left: 400px;
 }
+
 /* END OF BANNER */
 
 /* BLOG */
@@ -348,10 +353,16 @@ a {
 }
 @media screen and (max-width: 576px) {
   .para-1 {
-    height: 400vh;
+    height: 420vh;
   }
   .footer {
-    margin-top: 400vh;
+    margin-top: 420vh;
+  }
+  .banner-underline {
+    width: 400px;
+    border: 4px solid var(--mainBlue);
+    margin-top: 40px;
+    margin-left: 90px;
   }
 }
 /* END OF BLOG */
