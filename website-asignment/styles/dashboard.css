@@ -37,6 +37,7 @@ body {
     "sidebar footer footer";
   grid-template-rows: auto 1fr 1fr auto;
   grid-template-columns: auto 1fr;
+  position: relative;
 }
 /* .item {
   border: 2px solid orange;
@@ -50,15 +51,15 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
 }
 .sidebar {
   grid-area: sidebar;
 }
 .footer {
   grid-area: footer;
+  width: 100%;
+  height: 110px;
 }
 /* END OF GRID */
 
@@ -262,9 +263,26 @@ a {
 /* END OF SIDEBAR */
 
 /* PARA-1 */
+.table-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nbsa {
+  color: var(--mainBlue);
+  display: block;
+  text-align: center;
+  margin: 10px;
+}
+.nbsa h1 {
+  font-size: 35px;
+  padding: 10px 0;
+}
+.fa-link {
+  font-size: 35px;
+}
 .content-table {
   border-collapse: collapse;
-  margin: 25px 0;
   font-size: 0.9rem;
   min-width: 400px;
   border-radius: 5px 5px 0 0;
@@ -299,6 +317,33 @@ td:hover {
   border-bottom: 4px solid var(--mainBlue);
 }
 
+/* resposnsive */
+@media screen and (max-width: 576px) {
+  .content-table .border-head {
+    display: none;
+  }
+  .content-table,
+  .content-table tbody,
+  .content-table tr,
+  .content-table td {
+    display: block;
+    width: 100%;
+  }
+  .content-table tr {
+    margin-bottom: 15px;
+  }
+  .content-table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .para-1 {
+    height: 550vh;
+  }
+  .footer {
+    margin-top: 530vh;
+  }
+}
 /* END OF PARA-1 */
 
 /* FOOTER */
@@ -317,7 +362,7 @@ td:hover {
   transition: all 1s ease;
 }
 .fab {
-  font-size: 40px;
+  font-size: 35px;
 }
 .footer-single-icon:hover {
   color: var(--mainWhite);

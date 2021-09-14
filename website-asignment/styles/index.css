@@ -57,6 +57,7 @@ body {
 }
 .footer {
   grid-area: footer;
+  height: 110px;
 }
 /* END OF GRID */
 
@@ -372,7 +373,7 @@ a {
   transition: all 1s ease;
 }
 .fab {
-  font-size: 40px;
+  font-size: 35px;
 }
 .footer-single-icon:hover {
   color: var(--mainWhite);
