@@ -115,6 +115,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark);
+  height: 120px;
 }
 .active {
   border: 3px solid var(--mainWhite);
@@ -148,15 +149,18 @@ a {
 }
 
 .hz-logo {
-  height: 150px;
+  height: 110px;
   cursor: pointer;
   /* box-shadow: -15px -6px 13px -3px #191500; */
 }
 .profile-pic {
-  max-width: 110px;
+  max-width: 85px;
   margin-right: 10px;
 }
 @media screen and (max-width: 576px) {
+  .nav-links {
+    height: auto;
+  }
   .index-header {
     position: initial;
   }
@@ -278,7 +282,7 @@ a {
   background: transparent;
   text-align: center;
   margin-bottom: -50px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .banner-underline {
   width: 400px;

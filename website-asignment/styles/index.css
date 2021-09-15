@@ -38,9 +38,9 @@ body {
   grid-template-rows: auto 1fr 1fr auto;
   grid-template-columns: auto 1fr;
 }
-.item {
+/* .item {
   border: 2px solid orange;
-}
+} */
 
 .para-1 {
   grid-area: para-1;
@@ -72,6 +72,7 @@ body {
   z-index: 9000;
   width: 100%;
 }
+
 /* NAVBUTTON */
 .nav-btn {
   color: var(--mainBlue);
@@ -113,6 +114,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark);
+  height: 120px;
 }
 .active {
   border: 3px solid var(--mainWhite);
@@ -146,15 +148,18 @@ a {
 }
 
 .hz-logo {
-  height: 150px;
+  height: 110px;
   cursor: pointer;
   /* box-shadow: -15px -6px 13px -3px #191500; */
 }
 .profile-pic {
-  max-width: 110px;
+  max-width: 85px;
   margin-right: 10px;
 }
 @media screen and (max-width: 576px) {
+  .nav-links {
+    height: auto;
+  }
   .index-header {
     position: initial;
   }
