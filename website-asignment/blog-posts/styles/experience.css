@@ -268,16 +268,17 @@ a {
   justify-content: flex-end;
 }
 .banner-text {
-  font-size: 70px;
+  font-size: 80px;
   text-transform: uppercase;
   color: var(--mainWhite);
   font-style: italic;
+  text-align: right;
 }
 .banner-underline {
   width: 700px;
   border: 3px solid var(--mainBlue);
   /* places it in the center */
-  margin: 10px auto 10px auto;
+  margin: 20px auto 10px auto;
 }
 .about {
   padding: 10px 60px;
