@@ -19,11 +19,13 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 90vh;
 }
 
 .para-2 {
   grid-area: para-2;
   height: 100%;
+  background-color: var(--mainGrey);
 }
 .sidebar {
   grid-area: sidebar;
@@ -68,20 +70,27 @@
 
 /* PARA-2 */
 .experience {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  justify-content: baseline;
 }
 .experience-header {
   text-align: center;
   padding: 20px;
-  font-size: 50px;
+  font-size: 70px;
   color: var(--mainBlue);
+  border-bottom: 14px solid var(--darkGrey);
+  border-radius: 70%;
 }
 .experience-text {
   width: 100%;
-  text-align: center;
+  text-align: justify;
+  text-indent: 30px;
   padding: 40px 120px;
-  display: inline;
+  display: block;
   font-size: 25px;
+  color: #2e4052;
+}
+.experience-img {
+  width: 450px;
 }
 /* END OF PARA-2 */

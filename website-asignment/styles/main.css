@@ -198,6 +198,7 @@ a {
 .fa-times {
   font-size: 35px;
   transition: transform 0.7s ease-in-out;
+  color: var(--dark);
 }
 .fa-times:hover {
   transform: rotate(360deg);

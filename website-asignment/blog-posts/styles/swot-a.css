@@ -23,6 +23,7 @@
 .para-2 {
   grid-area: para-2;
   height: 100%;
+  background-color: var(--mainGrey);
 }
 .sidebar {
   grid-area: sidebar;
