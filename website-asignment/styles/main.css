@@ -16,7 +16,7 @@ body {
 
 /* these are variables  */
 :root {
-  --mainBlue: #2b98f0;
+  --mainBlue: #4ba0ea;
   --mainGrey: #575757;
   --lightGrey: #c9c9c9;
   --darkGrey: #959595;
@@ -174,7 +174,7 @@ a {
   z-index: 9001;
   top: 0;
   left: 0;
-  background: #1e90ff;
+  background: var(--mainBlue);
   /* opacity: 0.99; */
   overflow-x: hidden;
   padding-top: 60px;

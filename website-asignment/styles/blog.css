@@ -19,7 +19,7 @@
   /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(./images/pexels-photo-4511372.jpeg) center/cover no-repeat fixed;
   color: var(--lightGrey); */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/background-banner.jpg);
   background-attachment: fixed;
   background-position: center;

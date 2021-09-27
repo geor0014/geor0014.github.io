@@ -68,7 +68,7 @@
   width: 80%;
   position: relative;
   border-radius: 50%;
-  box-shadow: -19px 11px 0px -2px var(--mainBlue);
+  /* box-shadow: -19px 11px 0px -2px var(--mainBlue); */
 }
 
 .about-info {
