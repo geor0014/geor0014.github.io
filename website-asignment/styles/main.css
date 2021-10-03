@@ -10,6 +10,7 @@
 body {
   background-color: #f5f5f5;
   font-family: "Fira Sans", sans-serif;
+  font-weight: 700;
   /* The overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the left and right edges. */
   /* overflow-x: hidden; */
 }

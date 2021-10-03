@@ -13,6 +13,7 @@ body {
   /* The overflow-x property specifies whether to clip the content, add a scroll bar, or display overflow content of a block-level element, when it overflows at the left and right edges. */
   /* overflow-x: hidden; */
   min-height: 100%;
+  font-weight: 700;
 }
 
 /* these are variables  */
