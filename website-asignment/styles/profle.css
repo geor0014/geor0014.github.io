@@ -219,5 +219,10 @@
     flex: 0 0 calc(33.333% - 0.3rem);
   }
 }
+@media screen and (max-width: 576px) {
+  .section-title__name {
+    border: none;
+  }
+}
 
 /* END OF PARA-2 */
