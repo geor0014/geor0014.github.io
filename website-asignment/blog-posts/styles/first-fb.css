@@ -103,4 +103,19 @@
   margin: 30px;
 }
 
+@media screen and (max-width: 576px) {
+  .feedback-pic {
+    display: none;
+  }
+  .feedback-text-item {
+    width: 100%;
+  }
+  .banner-text {
+    font-size: 70px;
+    text-align: end;
+  }
+  .banner-underline {
+    width: 300px;
+  }
+}
 /* END OF PARA-2 */

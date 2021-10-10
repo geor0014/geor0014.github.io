@@ -137,7 +137,7 @@ h2 {
     display: none;
   }
   .banner-underline {
-    display: none;
+    width: 300px;
   }
 }
 /* END OF PARA-2 */

@@ -93,4 +93,16 @@
 .experience-img {
   width: 450px;
 }
+@media screen and (max-width: 576px) {
+  .banner-text {
+    font-size: 60px;
+    text-align: end;
+  }
+  .banner-underline {
+    width: 350px;
+  }
+  .experience-img {
+    display: none;
+  }
+}
 /* END OF PARA-2 */
