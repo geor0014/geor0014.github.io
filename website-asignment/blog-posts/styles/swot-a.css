@@ -23,7 +23,6 @@
 .para-2 {
   grid-area: para-2;
   height: 100%;
-  background-color: var(--mainGrey);
 }
 .sidebar {
   grid-area: sidebar;
@@ -84,7 +83,7 @@
 /* end of section title */
 
 .hobbies-section {
-  background: var(--mainWhite);
+  background-color: #beb7a4;
   padding: 3rem 0;
 }
 .hobbies__center {
@@ -117,6 +116,9 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   letter-spacing: 0.2rem;
+  color: var(--mainBlue);
+}
+.hobbies__single-hobby:hover .hobbies__single-hobby-title {
   color: var(--mainYellow);
 }
 
